@@ -30,11 +30,15 @@ $ python pySolitaireResultSimulation.py <result_file> <disp_dirrection> [enable_
 |---|---|
 |result_file|Specify the Klondike-Solver result file.|
 |disp_dirrection|-v ... display overlap verticaly. (default)|
-||-h ... display overlap horizentaly.|
+||-h ... display overlap horizontaly.|
 |enable_wait_enterkey|stop on each turn and continue with enter key enable. (defalut=false)|
 |wait_time|wait time(ms) for enable_wait_enterkey. (defalut=0[ms])|
 
-### 4. Execute command examples
+## 4. Execute command examples
+
+### 4-1. Execute command example1
+
+Display overlap horizontaly and enable_wait_enterkey.
 
 ```
 $ python Solitaire_Simulation.py ./game_results/G00001.txt
@@ -54,7 +58,9 @@ $ python Solitaire_Simulation.py ./game_results/G00005.txt -h false 100
 ...
 ```
 
-### 4. Execution examples
+### 4-2. Execute command example2
+
+Display overlap verticaly and enable_wait_enterkey.
 
 ```
 $ python pySolitaireResultSimulation.py ./game_results/G00001.txt -v true

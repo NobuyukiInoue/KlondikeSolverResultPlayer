@@ -10,7 +10,7 @@ Options:
     result_file : Specify the Klondike-Solver result file.
     disp_dirrection :
         -v ... display overlap verticaly. (default)
-        -h ... display overlap horizentaly.
+        -h ... display overlap horizontaly.
     enable_wait_enterkey  : stop on each turn and continue with enter key enable. (defalut=false)
     wait_time   : wait time(ms) for enable_wait_enterkey. (defalut=0[ms])
 
