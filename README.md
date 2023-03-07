@@ -6,6 +6,15 @@ Solitaire result files are obtained using Klondike-Solver /MVS option.<br>
 https://github.com/ShootMe/Klondike-Solver
 
 
+## Require
+
+- Python 3.6 or Later
+
+Required when building Klondike-Solver.
+
+- gcc(Linux/macOS) or minGW(MS-Windows)
+
+
 ## 1. Build the Klondike-Solver and pySolitaireResultSimulation execute.
 
 ```
@@ -60,26 +69,38 @@ $ python Solitaire_Simulation.py ./game_results/G00005.txt -h false 100
 
 ### 4-2. Execute command example2
 
-Display overlap verticaly and enable_wait_enterkey.
+Display overlap horizontaly and enable_wait_enterkey.
 
 ```
-$ python pySolitaireResultSimulation.py ./game_results/G00001.txt -v true
- 0: ['']
- 1: ['4D', '']
- 2: ['4C', '', '3C']
- 3: ['6H', '', '7D', '9S']
- 4: ['JD', '', '2C', '7S', 'AH']
- 5: ['AS', '', 'TS', '2H', '6S', 'AD']
- 6: ['5C', '', 'JC', 'KS', '2D', '8H', '4H']
- 7: ['KD', '', '6C', 'JH', '5D', '3S', '4S', '3H']
- m :['9D', 'TC', '2S', 'QC', 'KH', '5S', '9C', 'AC', 'QH', 'QD', '8S', '6D', '7C', '9H', 'JS', 'QS', '8C', '5H', 'TD', '3D', 'KC', '7H', '8D', 'TH']
- w :[]
-----------------------------------------------------------------------------------
- s :[]
- h :[]
- d :[]
- c :[]
-----------------------------------------------------------------------------------
+$ python pySolitaireResultSimulation.py ./game_results/G00001.txt -h true
+---+---------------+------------------
+     s   h   d   c    m        w
+---+---------------+------------------
+ 0 :                  TH  8S
+ 1 :                  8D  QD
+ 2 :                  7H  QH
+ 3 :                  KC  AC
+ 4 :                  3D  9C
+ 5 :                  TD  5S
+ 6 :                  5H  KH
+ 7 :                  8C  QC
+ 8 :                  QS  2S
+ 9 :                  JS  TC
+10 :                  9H  9D
+11 :                  7C
+12 :                  6D
+---+-----------------------------------
+     [0] [1] [2] [3] [4] [5] [6] [7]
+---+-----------------------------------
+ 0 : --  --  3C  9S  AH  AD  4H  3H
+ 1 :     4D  --  7D  7S  6S  8H  4S
+ 2 :         4C  --  2C  2H  2D  3S
+ 3 :             6H  --  TS  KS  5D
+ 4 :                 JD  --  JC  JH
+ 5 :                     AS  --  6C
+ 6 :                         5C  --
+ 7 :                             KD
+---+-----------------------------------
 turn = 0, next = "5S"
 Hit Enter key.
     ...
@@ -109,6 +130,10 @@ Hit Enter key.
 ---+-----------------------------------
 Execute time ... : x.xxxxxx[s]
 ```
+
+### 4-3. Execute command example3
+
+Display overlap verticaly and enable_wait_enterkey.
 
 ```
 $ python pySolitaireResultSimulation.py ./game_results/G00001.txt -v true
