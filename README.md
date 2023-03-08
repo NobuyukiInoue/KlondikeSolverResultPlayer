@@ -180,7 +180,7 @@ Execute time ... : x.xxxxxx[s]
 
 ## Licence
 
-[MIT](https://github.com/NobuyukiInoue/pySolitaireResultSimulation/blob/main/LICENSE)
+[MIT](https://github.com/NobuyukiInoue/pySolitaireResultSimulation/blob/main/LICENCE)
 
 
 ## Author
