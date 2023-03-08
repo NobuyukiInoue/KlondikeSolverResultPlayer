@@ -1,4 +1,4 @@
-# pySolitaireResultSolution
+# KlondikeSolverResultPlayer
 
 Displays the solution results of the Solitaire Klondike-Solver in order.
 
@@ -15,7 +15,7 @@ Required when building Klondike-Solver.
 - gcc(Linux/macOS) or minGW(MS-Windows)
 
 
-## 1. Build the Klondike-Solver and pySolitaireResultSimulation execute.
+## 1. Build the Klondike-Solver and KlondikeSolverResultPlayer execute.
 
 ```
 $ git clone https://github.com/ShootMe/Klondike-Solver
@@ -24,13 +24,13 @@ $ make
 $ cp ./KlondikeSolver ..
 $ cd ..
 $ ./KlondikeSolver /G 1 /MVS > 1.txt
-$ python pySolitaireResultSimulation.py 1.txt
+$ python KlondikeSolverResultPlayer.py 1.txt
 ```
 
 ## 2. Usage
 
 ```
-$ python pySolitaireResultSimulation.py <result_file> <disp_dirrection> [enable_wait_enterkey [wait_time]]
+$ python KlondikeSolverResultPlayer.py <result_file> <disp_dirrection> [enable_wait_enterkey [wait_time]]
 ```
 
 ## 3. Options
@@ -72,7 +72,7 @@ $ python Solitaire_Simulation.py ./game_results/G00005.txt -h false 100
 Display overlap horizontaly and enable_wait_enterkey.
 
 ```
-$ python pySolitaireResultSimulation.py ./game_results/G00001.txt -h true
+$ python KlondikeSolverResultPlayer.py ./game_results/G00001.txt -h true
 ---+---------------+------------------
      s   h   d   c    m        w
 ---+---------------+------------------
@@ -136,7 +136,7 @@ Execute time ... : x.xxxxxx[s]
 Display overlap verticaly and enable_wait_enterkey.
 
 ```
-$ python pySolitaireResultSimulation.py ./game_results/G00001.txt -v true
+$ python KlondikeSolverResultPlayer.py ./game_results/G00001.txt -v true
  0: ['']
  1: ['4D', '']
  2: ['4C', '', '3C']
@@ -180,7 +180,7 @@ Execute time ... : x.xxxxxx[s]
 
 ## Licence
 
-[MIT](https://github.com/NobuyukiInoue/pySolitaireResultSimulation/blob/main/LICENCE)
+[MIT](https://github.com/NobuyukiInoue/KlondikeSolverResultPlayer/blob/main/LICENCE)
 
 
 ## Author

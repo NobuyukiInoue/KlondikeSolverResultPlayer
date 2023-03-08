@@ -4,7 +4,7 @@
     Displays the solution results of the Solitaire Klondike-Solver in order.
 
 Usage:
-    python pySolitaireResultSimulation.py <result_file> <disp_dirrection> [enable_wait_enterkey [wait_time]]
+    python KlondikeSolverResultPlayer.py <result_file> <disp_dirrection> [enable_wait_enterkey [wait_time]]
 
 Options:
     result_file : Specify the Klondike-Solver result file.
@@ -15,11 +15,11 @@ Options:
     wait_time   : wait time(ms) for enable_wait_enterkey. (defalut=0[ms])
 
 Execute Example:
-    $ python Solitaire_Simulation.py ./game_results/G00001.txt
-    $ python Solitaire_Simulation.py ./game_results/G00002.txt -v true
-    $ python Solitaire_Simulation.py ./game_results/G00003.txt -v false 100
-    $ python Solitaire_Simulation.py ./game_results/G00004.txt -h true
-    $ python Solitaire_Simulation.py ./game_results/G00005.txt -h false 100
+    $ python KlondikeSolverResultPlayer.py ./game_results/G00001.txt
+    $ python KlondikeSolverResultPlayer.py ./game_results/G00002.txt -v true
+    $ python KlondikeSolverResultPlayer.py ./game_results/G00003.txt -v false 100
+    $ python KlondikeSolverResultPlayer.py ./game_results/G00004.txt -h true
+    $ python KlondikeSolverResultPlayer.py ./game_results/G00005.txt -h false 100
 
 Remarks:
     Solitaire result files are obtained using Klondike-Solver /MVS option.
@@ -32,7 +32,7 @@ Remarks:
     $ cp ./KlondikeSolver ..
     $ cd ..
     $ ./KlondikeSolver /G 1 /MVS > 1.txt
-    $ python pySolitaireResultSimulation.py 1.txt
+    $ python KlondikeSolverResultPlayer.py 1.txt
 """
 
 import os
@@ -262,11 +262,11 @@ def main():
         print("Usage: python {0} <result_file> <-v | -h> [enable_wait_enterkey [wait_time]]".format(argv[0]))
         print("\n" \
               "Example)\n" \
-              "$ python Solitaire_Simulation.py ./game_results/G00001.txt\n" \
-              "$ python Solitaire_Simulation.py ./game_results/G00002.txt -v true\n" \
-              "$ python Solitaire_Simulation.py ./game_results/G00003.txt -v false 100\n" \
-              "$ python Solitaire_Simulation.py ./game_results/G00004.txt -h true\n" \
-              "$ python Solitaire_Simulation.py ./game_results/G00005.txt -h false 500")
+              "$ python KlondikeSolverResultPlayer.py ./game_results/G00001.txt\n" \
+              "$ python KlondikeSolverResultPlayer.py ./game_results/G00002.txt -v true\n" \
+              "$ python KlondikeSolverResultPlayer.py ./game_results/G00003.txt -v false 100\n" \
+              "$ python KlondikeSolverResultPlayer.py ./game_results/G00004.txt -h true\n" \
+              "$ python KlondikeSolverResultPlayer.py ./game_results/G00005.txt -h false 500")
         exit(1)
 
     disp_dirrection = "-h"
